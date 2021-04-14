@@ -21,7 +21,7 @@ public:
 
 private:
     int xdir;
-    int ydit;
+    int ydir;
     QImage image;
     QRect rect;
     static const int INITIAL_X = 230;

@@ -3,7 +3,7 @@
 
 Ball::Ball()
 {
-    image.load(":brickout/images/ball");
+    image.load(":breakout/images/ball");
     rect = image.rect();
 
     resetState();
@@ -18,8 +18,6 @@ void Ball::autoMove()
 {
     rect.translate(xdir, ydir);
 
-    rect.translate(xdir, ydir);
-
     if (rect.left() == 0)
       xdir = 1;
 
@@ -30,7 +28,6 @@ void Ball::autoMove()
 
     if (rect.top() == 0)
       ydir = 1;
-
 }
 
 QRect Ball::getRect()
